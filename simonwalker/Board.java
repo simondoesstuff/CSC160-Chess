@@ -14,8 +14,8 @@ public class Board {
     // ---
 
     boolean setCell(Vector2 pos, PieceTypes type) {
-        if ((pos.getX() < 0) || (pos.getX() > board.length)) return false;
-        else if ((pos.getY() < 0) || (pos.getY() > board[0].length)) return false;
+        if ((pos.getX() < 0) || (pos.getX() > board[0].length)) return false;
+        else if ((pos.getY() < 0) || (pos.getY() > board.length)) return false;
 
         // the position is in bounds
 
@@ -23,10 +23,10 @@ public class Board {
         return true;
     }           // a single cell version of the other one
     boolean setCell(Vector2 pos1, Vector2 pos2, PieceTypes type) {
-        if ((pos1.getX() < 0) || (pos1.getX() > board.length)) return false;
-        else if ((pos1.getY() < 0) || (pos1.getY() > board[0].length)) return false;
-        if ((pos2.getX() < 0) || (pos2.getX() > board.length)) return false;
-        else if ((pos2.getY() < 0) || (pos2.getY() > board[0].length)) return false;
+        if ((pos1.getX() < 0) || (pos1.getX() > board[0].length)) return false;
+        else if ((pos1.getY() < 0) || (pos1.getY() > board.length)) return false;
+        if ((pos2.getX() < 0) || (pos2.getX() > board[0].length)) return false;
+        else if ((pos2.getY() < 0) || (pos2.getY() > board.length)) return false;
 
         // both points are now in bounds
 
